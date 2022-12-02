@@ -1,3 +1,4 @@
+
 function x_jw = myfft(x_n)
 %determine N
 [N, NumCols] = size(x_n);
