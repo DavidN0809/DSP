@@ -4,10 +4,9 @@ function x_n = myifft(x_k)
 
     for n = 1:N
         for k = 1:N
-            W_N(k,n) = exp(-i * ((2*pi*(k-1))/N) * (n-1));
+            W_N(k,n) = exp(-1i * ((2*pi*(k-1))/N) * (n-1));
         end
     end
 
-    x_n = x_k' * W_N;
-    x_n = x_n';
+    x_n = (1/N) *x_k * W1_N;
 end
