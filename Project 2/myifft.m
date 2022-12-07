@@ -1,6 +1,6 @@
 function x_n = myifft(x_k)
     N = length(x_k);
-    %k = N-1;
+    k = N-1;
 
     for n = 1:N
         for k = 1:N

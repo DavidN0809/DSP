@@ -1,6 +1,6 @@
 function x_jW = myfft(x_n)
     N = length(x_n);
-    %k = N-1;
+    k = N-1;
 
     for n = 1:N
         for k = 1:N
